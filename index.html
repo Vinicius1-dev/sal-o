@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Salão de beleza feminino premium com serviços de cabelo, unhas, maquiagem, sobrancelhas e tratamentos estéticos em um ambiente sofisticado."
+    />
+    <title>Maison Élégance | Salão de Beleza Premium</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&family=Italiana&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header fixo premium -->
+    <header class="header" id="topo">
+      <div class="container header__content">
+        <a href="#hero" class="brand" aria-label="Maison Élégance">
+          <span class="brand__eyebrow">Beleza de alto padrão</span>
+          <span class="brand__name">Maison Élégance</span>
+        </a>
+
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav">
+          <a href="#sobre">Sobre</a>
+          <a href="#experiencia">Experiência</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#galeria">Galeria</a>
+          <a href="#equipe">Equipe</a>
+          <a href="#depoimentos">Depoimentos</a>
+          <a href="#contato">Contato</a>
+        </nav>
+
+        <a
+          class="button button--primary header__cta"
+          href="https://wa.me/5511999999999?text=Ol%C3%A1%2C+quero+agendar+um+hor%C3%A1rio+na+Maison+%C3%89l%C3%A9gance."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Agendar no WhatsApp
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero editorial / impactante -->
+      <section class="hero" id="hero">
+        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="hero__veil" aria-hidden="true"></div>
+
+        <div class="container hero__grid">
+          <div class="hero__content reveal">
+            <span class="section-tag">Luxo, técnica e delicadeza</span>
+
+            <h1>
+              Uma experiência de beleza
+              <span class="hero__title-accent">assinada</span>
+              pela elegância.
+            </h1>
+
+            <p>
+              Atendimento exclusivo para mulheres que valorizam acabamento impecável,
+              conforto e um resultado sofisticado — com naturalidade, presença e confiança.
+            </p>
+
+            <div class="hero__actions">
+              <a
+                class="button button--primary"
+                href="https://wa.me/5511999999999?text=Ol%C3%A1%2C+quero+agendar+um+hor%C3%A1rio+na+Maison+%C3%89l%C3%A9gance."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Agendar no WhatsApp
+              </a>
+              <a class="button button--ghost" href="#experiencia">Ver a experiência</a>
+            </div>
+
+            <div class="hero__trust">
+              <div class="trust-pill">
+                <span class="trust-pill__label">Avaliação</span>
+                <strong class="trust-pill__value">4,9</strong>
+                <span class="trust-pill__suffix">/5</span>
+              </div>
+              <div class="trust-pill">
+                <span class="trust-pill__label">Atendimentos</span>
+                <strong class="trust-pill__value">+2.800</strong>
+              </div>
+              <div class="trust-pill">
+                <span class="trust-pill__label">Padrão</span>
+                <strong class="trust-pill__value">Premium</strong>
+              </div>
+            </div>
+
+            <div class="hero__microcopy">
+              <span>Agendamento com confirmação rápida</span>
+              <span>•</span>
+              <span>Equipe especializada</span>
+              <span>•</span>
+              <span>Ambiente de alto padrão</span>
+            </div>
+          </div>
+
+          <div class="hero__editorial reveal reveal--delay">
+            <div class="editorial-collage">
+              <figure class="editorial-collage__main">
+                <img
+                  src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1200&q=80"
+                  alt="Mulher elegante em ambiente de salão premium"
+                />
+              </figure>
+
+              <figure class="editorial-collage__side">
+                <img
+                  src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=80"
+                  alt="Detalhes de autocuidado e finalização"
+                />
+              </figure>
+
+              <div class="editorial-collage__stamp" aria-hidden="true">
+                <span>Maison</span>
+                <span>Élégance</span>
+              </div>
+
+              <div class="editorial-collage__note">
+                <strong>Curadoria de beleza</strong>
+                <span>protocolos e acabamentos pensados para você</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Faixa editorial de prova social -->
+        <div class="hero__marquee" aria-hidden="true">
+          <div class="marquee">
+            <span>Autocuidado com alto padrão</span>
+            <span class="dot"></span>
+            <span>Bege • rosé gold • vinho</span>
+            <span class="dot"></span>
+            <span>Atendimento com assinatura</span>
+            <span class="dot"></span>
+            <span>Acabamento impecável</span>
+            <span class="dot"></span>
+            <span>Conforto e exclusividade</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sobre institucional -->
+      <section class="section about" id="sobre">
+        <div class="container about__grid">
+          <div class="section-heading reveal">
+            <span class="section-tag">Sobre a Maison Élégance</span>
+            <h2>Uma marca premium criada para elevar autoestima com luxo discreto e técnica refinada.</h2>
+          </div>
+
+          <div class="about__content reveal reveal--delay">
+            <p>
+              A Maison Élégance nasceu da união entre estética de alto padrão,
+              atendimento humanizado e um olhar cuidadoso para o universo feminino.
+              Cada detalhe do ambiente, dos produtos e da experiência foi desenhado
+              para proporcionar bem-estar, exclusividade e resultados memoráveis.
+            </p>
+            <p>
+              Trabalhamos com protocolos personalizados e profissionais altamente
+              qualificadas para entregar elegância natural, acabamento impecável e
+              uma jornada de autocuidado que combina técnica, conforto e sensibilidade.
+            </p>
+            <div class="about__signature">
+              <div class="signature-card">
+                <span class="signature-card__kicker">Nossa assinatura</span>
+                <strong>Elegância natural, acabamento impecável, experiência inesquecível.</strong>
+              </div>
+              <div class="signature-card signature-card--soft">
+                <span class="signature-card__kicker">Para você</span>
+                <strong>Consultoria de estilo e indicação do melhor protocolo para sua rotina.</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Diferenciais -->
+      <section class="section section--soft">
+        <div class="container">
+          <div class="section-heading section-heading--center reveal">
+            <span class="section-tag">Nossos diferenciais</span>
+            <h2>O que torna a experiência verdadeiramente premium</h2>
+          </div>
+
+          <div class="differentials">
+            <article class="info-card reveal">
+              <h3>Consultoria individual</h3>
+              <p>
+                Cada atendimento começa com uma escuta atenta para alinhar estilo,
+                rotina, objetivos e o resultado ideal para cada cliente.
+              </p>
+              <div class="info-card__meta">
+                <span>Visagismo</span><span>•</span><span>Curadoria</span>
+              </div>
+            </article>
+            <article class="info-card reveal reveal--delay">
+              <h3>Produtos de excelência</h3>
+              <p>
+                Selecionamos linhas reconhecidas no mercado profissional para garantir
+                performance, segurança e acabamento superior.
+              </p>
+              <div class="info-card__meta">
+                <span>Alta performance</span><span>•</span><span>Segurança</span>
+              </div>
+            </article>
+            <article class="info-card reveal reveal--delay-2">
+              <h3>Ambiente elegante</h3>
+              <p>
+                Um espaço acolhedor, perfumado e visualmente refinado para tornar
+                o seu momento de beleza ainda mais especial.
+              </p>
+              <div class="info-card__meta">
+                <span>Conforto</span><span>•</span><span>Privacidade</span>
+              </div>
+            </article>
+            <article class="info-card reveal">
+              <h3>Pontualidade e conforto</h3>
+              <p>
+                Gestão cuidadosa dos horários, atendimento atencioso e uma experiência
+                fluida do agendamento à finalização.
+              </p>
+              <div class="info-card__meta">
+                <span>Agenda inteligente</span><span>•</span><span>Previsibilidade</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experiência no salão -->
+      <section class="section experience" id="experiencia">
+        <div class="container">
+          <div class="section-heading section-heading--center reveal">
+            <span class="section-tag">Experiência no salão</span>
+            <h2>Um ritual de autocuidado com começo, meio e final pensados para você</h2>
+          </div>
+
+          <div class="experience__grid">
+            <article class="experience-card reveal">
+              <span class="experience-card__step">01</span>
+              <h3>Recepção & boas-vindas</h3>
+              <p>
+                Confirmação do atendimento, preferências e um acolhimento leve e elegante para
+                você entrar no clima da experiência.
+              </p>
+            </article>
+            <article class="experience-card reveal reveal--delay">
+              <span class="experience-card__step">02</span>
+              <h3>Diagnóstico refinado</h3>
+              <p>
+                Análise técnica, visagismo e indicação do melhor protocolo com transparência,
+                cuidado e foco no resultado ideal.
+              </p>
+            </article>
+            <article class="experience-card reveal reveal--delay-2">
+              <span class="experience-card__step">03</span>
+              <h3>Execução premium</h3>
+              <p>
+                Técnica, acabamento e produtos de alta performance — com atenção aos detalhes
+                que fazem o resultado parecer “caro”.
+              </p>
+            </article>
+            <article class="experience-card reveal">
+              <span class="experience-card__step">04</span>
+              <h3>Finalização & durabilidade</h3>
+              <p>
+                Orientações personalizadas para manutenção em casa e recomendações de retorno
+                para preservar o brilho e a elegância.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Serviços -->
+      <section class="section services" id="servicos">
+        <div class="container">
+          <div class="section-heading section-heading--center reveal">
+            <span class="section-tag">Serviços exclusivos</span>
+            <h2>Beleza completa em categorias pensadas para cada fase do seu cuidado</h2>
+          </div>
+
+          <div class="services__intro reveal">
+            <div class="services__intro-card">
+              <strong>Serviços assinatura</strong>
+              <p>
+                Protocolos selecionados para entregar acabamento sofisticado com naturalidade —
+                ideal para quem busca presença, elegância e durabilidade.
+              </p>
+            </div>
+            <div class="services__intro-card services__intro-card--light">
+              <strong>Para eventos e rotina</strong>
+              <p>
+                Da manutenção discreta ao glamour editorial: você escolhe o momento, nós entregamos
+                o padrão Maison.
+              </p>
+            </div>
+          </div>
+
+          <div class="services__grid">
+            <article class="service-card reveal">
+              <h3>Cabelo</h3>
+              <ul>
+                <li>Corte feminino autoral</li>
+                <li>Escova premium e styling</li>
+                <li>Coloração e mechas sofisticadas</li>
+                <li>Hidratação e reconstrução capilar</li>
+              </ul>
+              <a
+                class="service-card__cta"
+                href="https://wa.me/5511999999999?text=Ol%C3%A1%2C+quero+agendar+servi%C3%A7os+de+Cabelo+na+Maison+%C3%89l%C3%A9gance."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Agendar cabelo →
+              </a>
+            </article>
+            <article class="service-card reveal reveal--delay">
+              <h3>Unhas</h3>
+              <ul>
+                <li>Manicure clássica e spa</li>
+                <li>Pedicure com acabamento impecável</li>
+                <li>Esmaltação em gel</li>
+                <li>Nail art delicada e elegante</li>
+              </ul>
+              <a
+                class="service-card__cta"
+                href="https://wa.me/5511999999999?text=Ol%C3%A1%2C+quero+agendar+servi%C3%A7os+de+Unhas+na+Maison+%C3%89l%C3%A9gance."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Agendar unhas →
+              </a>
+            </article>
+            <article class="service-card reveal reveal--delay-2">
+              <h3>Sobrancelhas</h3>
+              <ul>
+                <li>Design personalizado</li>
+                <li>Henna com efeito natural</li>
+                <li>Alinhamento e finalização</li>
+                <li>Brow lamination</li>
+              </ul>
+              <a
+                class="service-card__cta"
+                href="https://wa.me/5511999999999?text=Ol%C3%A1%2C+quero+agendar+servi%C3%A7os+de+Sobrancelhas+na+Maison+%C3%89l%C3%A9gance."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Agendar sobrancelhas →
+              </a>
+            </article>
+            <article class="service-card reveal">
+              <h3>Maquiagem</h3>
+              <ul>
+                <li>Maquiagem social premium</li>
+                <li>Produção para noivas e eventos</li>
+                <li>Pele iluminada e sofisticada</li>
+                <li>Consultoria de visagismo</li>
+              </ul>
+              <a
+                class="service-card__cta"
+                href="https://wa.me/5511999999999?text=Ol%C3%A1%2C+quero+agendar+Maquiagem+na+Maison+%C3%89l%C3%A9gance."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Agendar maquiagem →
+              </a>
+            </article>
+            <article class="service-card reveal reveal--delay">
+              <h3>Tratamentos</h3>
+              <ul>
+                <li>Protocolos de revitalização facial</li>
+                <li>Cuidados intensivos para fios</li>
+                <li>Rituais de spa das mãos e pés</li>
+                <li>Tratamentos para brilho e nutrição</li>
+              </ul>
+              <a
+                class="service-card__cta"
+                href="https://wa.me/5511999999999?text=Ol%C3%A1%2C+quero+agendar+Tratamentos+na+Maison+%C3%89l%C3%A9gance."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Agendar tratamentos →
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Ambiente & conforto -->
+      <section class="section comfort section--soft" id="ambiente">
+        <div class="container comfort__grid">
+          <div class="comfort__media reveal">
+            <div class="comfort__frame">
+              <img
+                src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1400&q=80"
+                alt="Ambiente sofisticado e confortável"
+              />
+            </div>
+            <div class="comfort__floating">
+              <span class="section-tag">Conforto & privacidade</span>
+              <p>
+                Um ambiente elegante, silencioso e perfumado — criado para você relaxar e
+                viver seu ritual de beleza com tranquilidade.
+              </p>
+            </div>
+          </div>
+          <div class="comfort__content reveal reveal--delay">
+            <div class="section-heading">
+              <span class="section-tag">Ambiente e conforto</span>
+              <h2>Luxo discreto, atmosfera acolhedora e detalhes que elevam a experiência</h2>
+            </div>
+            <div class="comfort__features">
+              <div class="feature-row">
+                <strong>Poltronas confortáveis</strong>
+                <span>ergonomia e bem-estar em cada etapa</span>
+              </div>
+              <div class="feature-row">
+                <strong>Higiene e segurança</strong>
+                <span>processos rigorosos e organização impecável</span>
+              </div>
+              <div class="feature-row">
+                <strong>Atendimento pontual</strong>
+                <span>agenda planejada para respeitar o seu tempo</span>
+              </div>
+              <div class="feature-row">
+                <strong>Clima de exclusividade</strong>
+                <span>detalhes sensoriais e experiência premium</span>
+              </div>
+            </div>
+
+            <a
+              class="button button--primary"
+              href="https://wa.me/5511999999999?text=Ol%C3%A1%2C+quero+agendar+uma+visita+ou+hor%C3%A1rio+na+Maison+%C3%89l%C3%A9gance."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Quero agendar minha experiência
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Galeria -->
+      <section class="section gallery section--soft" id="galeria">
+        <div class="container">
+          <div class="section-heading section-heading--center reveal">
+            <span class="section-tag">Galeria premium</span>
+            <h2>Ambientes, produções e acabamentos que refletem alto padrão</h2>
+          </div>
+
+          <div class="gallery__grid">
+            <figure class="gallery__item gallery__item--large reveal">
+              <img
+                src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1200&q=80"
+                alt="Atendimento de cabelo em salão sofisticado"
+              />
+            </figure>
+            <figure class="gallery__item reveal reveal--delay">
+              <img
+                src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80"
+                alt="Maquiagem feminina elegante"
+              />
+            </figure>
+            <figure class="gallery__item reveal reveal--delay-2">
+              <img
+                src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80"
+                alt="Cliente em produção premium"
+              />
+            </figure>
+            <figure class="gallery__item reveal">
+              <img
+                src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=80"
+                alt="Detalhes de beleza e autocuidado"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Resultados reais / antes e depois -->
+      <section class="section before-after">
+        <div class="container">
+          <div class="section-heading section-heading--center reveal">
+            <span class="section-tag">Antes e depois</span>
+            <h2>Resultados reais com elegância — acabamento, brilho e leveza</h2>
+          </div>
+
+          <div class="compare-grid">
+            <article class="compare-card reveal">
+              <div class="compare-card__images">
+                <img
+                  src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80"
+                  alt="Antes do tratamento de cabelo"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80"
+                  alt="Depois do tratamento de cabelo"
+                />
+              </div>
+              <div class="compare-card__labels">
+                <span>Antes</span>
+                <span>Depois</span>
+              </div>
+              <h3>Revitalização capilar</h3>
+            </article>
+
+            <article class="compare-card reveal reveal--delay">
+              <div class="compare-card__images">
+                <img
+                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=80"
+                  alt="Antes da maquiagem premium"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=900&q=80"
+                  alt="Depois da maquiagem premium"
+                />
+              </div>
+              <div class="compare-card__labels">
+                <span>Antes</span>
+                <span>Depois</span>
+              </div>
+              <h3>Produção para evento</h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Equipe / profissionais -->
+      <section class="section team section--soft" id="equipe">
+        <div class="container">
+          <div class="section-heading section-heading--center reveal">
+            <span class="section-tag">Equipe especializada</span>
+            <h2>Profissionais que unem técnica, sensibilidade e excelência estética</h2>
+          </div>
+
+          <div class="team__grid">
+            <article class="team-card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=700&q=80"
+                alt="Diretora de beleza"
+              />
+              <h3>Isabella Monteiro</h3>
+              <p>Diretora criativa e especialista em transformação capilar.</p>
+            </article>
+            <article class="team-card reveal reveal--delay">
+              <img
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=700&q=80"
+                alt="Especialista em unhas"
+              />
+              <h3>Camila Ferraz</h3>
+              <p>Expert em nail design sofisticado e protocolos de spa para mãos e pés.</p>
+            </article>
+            <article class="team-card reveal reveal--delay-2">
+              <img
+                src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=700&q=80"
+                alt="Maquiadora premium"
+              />
+              <h3>Helena Duarte</h3>
+              <p>Maquiadora de alta performance para noivas, eventos e editoriais.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Depoimentos -->
+      <section class="section testimonials" id="depoimentos">
+        <div class="container">
+          <div class="section-heading section-heading--center reveal">
+            <span class="section-tag">Depoimentos</span>
+            <h2>Clientes que encontraram um novo padrão de cuidado e autoestima</h2>
+          </div>
+
+          <div class="testimonials__grid">
+            <article class="testimonial-card reveal">
+              <p>
+                “É o tipo de lugar em que você se sente valorizada em cada detalhe.
+                O atendimento é impecável e o resultado sempre supera minhas expectativas.”
+              </p>
+              <strong>Marina A.</strong>
+            </article>
+            <article class="testimonial-card reveal reveal--delay">
+              <p>
+                “A Maison Élégance entrega luxo de verdade, mas com acolhimento.
+                Saio daqui mais confiante, leve e completamente encantada.”
+              </p>
+              <strong>Fernanda S.</strong>
+            </article>
+            <article class="testimonial-card reveal reveal--delay-2">
+              <p>
+                “A maquiagem ficou sofisticada, natural e perfeita para o meu evento.
+                Foi uma experiência elegante do início ao fim.”
+              </p>
+              <strong>Larissa M.</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pacotes especiais -->
+      <section class="section packages section--soft">
+        <div class="container">
+          <div class="section-heading section-heading--center reveal">
+            <span class="section-tag">Pacotes especiais</span>
+            <h2>Combinações exclusivas para ocasiões importantes e autocuidado contínuo</h2>
+          </div>
+
+          <div class="packages__grid">
+            <article class="package-card reveal">
+              <span class="package-card__badge">Mais procurado</span>
+              <h3>Dia de Rainha</h3>
+              <p>Cabelo, maquiagem, manicure spa e finalização completa para eventos especiais.</p>
+              <strong>R$ 590</strong>
+            </article>
+            <article class="package-card reveal reveal--delay">
+              <h3>Noiva Signature</h3>
+              <p>Prévia, maquiagem premium, penteado e atendimento exclusivo no grande dia.</p>
+              <strong>R$ 1.290</strong>
+            </article>
+            <article class="package-card reveal reveal--delay-2">
+              <h3>Ritual Mensal</h3>
+              <p>Plano com manutenção de unhas, escova premium e tratamento de hidratação profunda.</p>
+              <strong>R$ 420</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section faq">
+        <div class="container faq__grid">
+          <div class="section-heading reveal">
+            <span class="section-tag">FAQ</span>
+            <h2>Dúvidas frequentes sobre atendimento, agendamento e experiência</h2>
+          </div>
+
+          <div class="faq__list">
+            <article class="faq-item reveal">
+              <button class="faq-question" type="button">
+                Como funciona o agendamento?
+              </button>
+              <div class="faq-answer">
+                <p>
+                  O agendamento pode ser feito diretamente pelo WhatsApp, com confirmação
+                  rápida e orientação sobre horário, profissional e preparação prévia.
+                </p>
+              </div>
+            </article>
+            <article class="faq-item reveal reveal--delay">
+              <button class="faq-question" type="button">
+                Vocês trabalham com atendimento personalizado?
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Sim. Avaliamos o perfil, estilo e objetivo de cada cliente para indicar
+                  o melhor protocolo, acabamento e profissional.
+                </p>
+              </div>
+            </article>
+            <article class="faq-item reveal reveal--delay-2">
+              <button class="faq-question" type="button">
+                Quais formas de pagamento são aceitas?
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Aceitamos Pix, cartões de débito e crédito, além de condições especiais
+                  para pacotes e noivas.
+                </p>
+              </div>
+            </article>
+            <article class="faq-item reveal">
+              <button class="faq-question" type="button">
+                É possível reservar horários para eventos?
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Sim. Organizamos cronogramas para noivas, madrinhas, formandas e outras
+                  produções especiais com atendimento dedicado.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contato -->
+      <section class="section contact section--soft" id="contato">
+        <div class="container contact__grid">
+          <div class="contact__info reveal">
+            <span class="section-tag">Contato</span>
+            <h2>Seu próximo momento de beleza começa com um atendimento exclusivo.</h2>
+            <p>
+              Estamos prontas para receber você com conforto, pontualidade e um
+              atendimento que valoriza cada detalhe da sua experiência.
+            </p>
+
+            <div class="contact__cards">
+              <div class="contact-card">
+                <strong>Endereço</strong>
+                <span>Alameda das Magnólias, 185 - Jardins, São Paulo</span>
+              </div>
+              <div class="contact-card">
+                <strong>Horário</strong>
+                <span>Terça a sábado, das 9h às 20h</span>
+              </div>
+              <div class="contact-card">
+                <strong>Instagram</strong>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                  @maison.elegance
+                </a>
+              </div>
+              <div class="contact-card">
+                <strong>WhatsApp</strong>
+                <a
+                  href="https://wa.me/5511999999999?text=Ol%C3%A1%2C+quero+agendar+um+hor%C3%A1rio+na+Maison+%C3%89l%C3%A9gance."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  (11) 99999-9999
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__map reveal reveal--delay">
+            <iframe
+              title="Mapa do salão"
+              src="https://www.google.com/maps?q=Jardins%20S%C3%A3o%20Paulo&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA final forte -->
+      <section class="final-cta">
+        <div class="final-cta__bg" aria-hidden="true"></div>
+        <div class="container final-cta__content reveal">
+          <span class="section-tag">Pronta para viver essa experiência?</span>
+          <h2>Agende seu horário e sinta a diferença de um atendimento premium.</h2>
+          <p>
+            Você merece um salão que entenda sua beleza com técnica, delicadeza e presença.
+            Clique no WhatsApp e reserve o seu momento Maison.
+          </p>
+          <div class="final-cta__actions">
+            <a
+              class="button button--primary"
+              href="https://wa.me/5511999999999?text=Ol%C3%A1%2C+quero+agendar+meu+hor%C3%A1rio+na+Maison+%C3%89l%C3%A9gance."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Agendar agora
+            </a>
+            <a class="button button--outline" href="#servicos">Ver serviços</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodapé sofisticado -->
+    <footer class="footer">
+      <div class="container footer__content">
+        <div>
+          <span class="section-tag">Maison Élégance</span>
+          <p>
+            Sofisticação, cuidado e beleza feminina em uma experiência premium que
+            valoriza a sua essência.
+          </p>
+        </div>
+        <a
+          class="button button--primary"
+          href="https://wa.me/5511999999999?text=Ol%C3%A1%2C+quero+agendar+um+hor%C3%A1rio+na+Maison+%C3%89l%C3%A9gance."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Agendar atendimento
+        </a>
+      </div>
+    </footer>
+
+    <!-- Barra de CTA fixa no mobile (conversão) -->
+    <div class="mobile-bar" role="region" aria-label="Ações rápidas">
+      <a
+        class="mobile-bar__action"
+        href="https://wa.me/5511999999999?text=Ol%C3%A1%2C+quero+agendar+um+hor%C3%A1rio+na+Maison+%C3%89l%C3%A9gance."
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Agendar no WhatsApp
+      </a>
+      <a class="mobile-bar__secondary" href="#servicos">Serviços</a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
